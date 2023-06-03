@@ -10,18 +10,3 @@ PlayState_t *playStateCreate(char *name) {
     strcpy(state->name, name);
     return state;
 }
-
-void playStateRender(void *state) {
-    ClearBackground(RAYWHITE);
-    DrawText("This is play state", 10, 10, 20, DARKGRAY);
-}
-
-void playStateUpdate(void *state) {}
-
-void playStateOnEnter(void *state) {
-    fprintf(stdout, "Play on enter\n");
-}
-
-void playStateOnExit(void *state) {
-    fprintf(stdout, "Play on exit\n");
-}
