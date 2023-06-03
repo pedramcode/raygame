@@ -1,6 +1,6 @@
 # Raygame
 
-This is an attempt to making a game and game engine for that game (LOL) using C language (Raylib)
+This is an attempt to making a game, and game engine for that game (LOL) using C language (Raylib)
 
 ## Architecture
 I'm proud of this arch I came up with :D
