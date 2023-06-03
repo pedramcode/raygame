@@ -13,7 +13,7 @@ PlayState_t *playStateCreate(char *name) {
 
 void playStateRender(void *state) {
     ClearBackground(RAYWHITE);
-    DrawText("Happy Happy Happy", 10, 10, 20, DARKGRAY);
+    DrawText("This is play state", 10, 10, 20, DARKGRAY);
 }
 
 void playStateUpdate(void *state) {}
