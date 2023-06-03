@@ -20,8 +20,6 @@ void playStateUpdate(void *state) {}
 
 void playStateOnEnter(void *state) {
     fprintf(stdout, "Play on enter\n");
-//    App_t *app = GET_APP(state);
-//    appSetState(app, "menu");
 }
 
 void playStateOnExit(void *state) {
