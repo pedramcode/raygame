@@ -7,7 +7,7 @@
 #include <string.h>
 #include <stateAbstract.h>
 
-#define ADD_STATE(app,state) (appAddState(app, (StateAbstract_t *) state))
+#define REGISTER_STATE(app,state) (appAddState(app, (StateAbstract_t *) state))
 
 typedef struct {
     bool isRunning;
