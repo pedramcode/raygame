@@ -3,7 +3,7 @@
 This is an attempt to making a game and game engine for that game (LOL) using C language (Raylib)
 
 ## Architecture
-I love this arch I came up with :D
+I'm proud of this arch I came up with :D
 
 ### State manager
 It's a crucial part of any game engine. It's simply means what user sees and interacts to. Play state, Menu state, Pause state, etc. State manager handles all this states and transitions between them.
