@@ -89,3 +89,11 @@ void appSetState(App_t *app, char *name) {
     strcpy(app->currentStateName, name);
     appGetCurrentState(app)->onEnter(appGetCurrentStateRawPointer(app));
 }
+
+void appFree(App_t *app){
+    for(int i = 0 ; i < app->stateCount ; i++){
+        free(app->states[i]);
+    }
+    free(app->currentStateName);
+    free(app);
+}

@@ -26,5 +26,6 @@ StateAbstract_t *appGetCurrentState(App_t *app);
 void *appGetCurrentStateRawPointer(App_t *app);
 void appSetState(App_t *app, char *name);
 int appExecute(App_t *app);
+void appFree(App_t *app);
 
 #endif //RAYGAME_APP_H
