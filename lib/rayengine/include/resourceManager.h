@@ -28,5 +28,6 @@ typedef struct {
 ResourceManager_t *resourceNewManager(ResourceType_t type);
 void resourceAdd(ResourceManager_t *manager, char *name, void *data);
 Resource_t *resourceGet(ResourceManager_t *manager, char *name);
+void resourceFree(ResourceManager_t *manager);
 
 #endif //RAYGAME_RESOURCEMANAGER_H

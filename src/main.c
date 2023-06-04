@@ -19,6 +19,7 @@ int main() {
 void load_assets(App_t *app) {
     Image img = LoadImage("assets/images/bot.png");
     Texture2D texture = LoadTextureFromImage(img);
+    UnloadImage(img);
     Texture2D *texture_g = malloc(sizeof(Texture2D));
     memcpy(texture_g, &texture, sizeof(Texture2D));
     appAddTexture(app, texture_g, "me");

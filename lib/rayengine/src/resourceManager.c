@@ -34,3 +34,13 @@ Resource_t *resourceGet(ResourceManager_t *manager, char *name){
     unsigned int index = hash(name);
     return manager->data[index];
 }
+
+void resourceFree(ResourceManager_t *manager){
+    for(int i = 0 ; i < RESOURCE_HASHTABLE_SIZE ; i++){
+        if(manager->data[i] != NULL){
+            free(manager->data[i]->resource);
+            free(manager->data[i]->name);
+        }
+        free(manager->data[i]);
+    }
+}

@@ -6,5 +6,12 @@ void appFree(App_t *app){
     }
     free(app->title);
     free(app->currentStateName);
+
+    resourceFree(app->textures);
+    resourceFree(app->fonts);
+    resourceFree(app->waves);
+    resourceFree(app->sounds);
+    resourceFree(app->musics);
+
     free(app);
 }
