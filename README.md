@@ -12,3 +12,6 @@ Because I wrote this game/game engine using C language, I have to forget about O
 
 ### ECS
 It's the main architecture of data flow and behavior management of game engine. **Entity-Component-System** is an architectural pattern that is very suitable (And I mean that wholeheartedly) for game engines. 
+
+### Resource management
+Resource manager uses a HashTable to store and retrieve objects to and from memory.
