@@ -18,5 +18,6 @@ int main() {
 
 void load_assets(App_t *app){
     Image img = LoadImage("assets/images/bot.png");
-    appAddImage(app, &img, "me");
+    Image *imgPtr = &img;
+    appAddImage(app, imgPtr, "me");
 }

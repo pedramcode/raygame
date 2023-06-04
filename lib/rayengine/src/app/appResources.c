@@ -24,29 +24,29 @@ void appAddMusic(App_t *app, Music *music, char *name) {
 Image *appGetImage(App_t *app, char *name) {
     Resource_t *r = resourceGet(app->images, name);
     if (r == NULL) return NULL;
-    return (Image *) r;
+    return (Image *) r->resource;
 }
 
 Font *appGetFont(App_t *app, char *name) {
     Resource_t *r = resourceGet(app->fonts, name);
     if (r == NULL) return NULL;
-    return (Font *) r;
+    return (Font *) r->resource;
 }
 
 Wave *appGetWave(App_t *app, char *name) {
     Resource_t *r = resourceGet(app->waves, name);
     if (r == NULL) return NULL;
-    return (Wave *) r;
+    return (Wave *) r->resource;
 }
 
 Sound *appGetSound(App_t *app, char *name) {
     Resource_t *r = resourceGet(app->sounds, name);
     if (r == NULL) return NULL;
-    return (Sound *) r;
+    return (Sound *) r->resource;
 }
 
 Music *appGetMusic(App_t *app, char *name) {
     Resource_t *r = resourceGet(app->musics, name);
     if (r == NULL) return NULL;
-    return (Music *) r;
+    return (Music *) r->resource;
 }
