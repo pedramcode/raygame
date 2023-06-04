@@ -6,7 +6,7 @@ unsigned int hash(const char* key) {
     unsigned int length = strlen(key);
 
     for (int i = 0; i < length; i++) {
-        hashValue = (hashValue * 31) + key[i];
+        hashValue = (hashValue * 31) + key[i] + i;
     }
 
     return hashValue % RESOURCE_HASHTABLE_SIZE;
