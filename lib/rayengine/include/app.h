@@ -3,9 +3,10 @@
 
 #include <stdbool.h>
 #include <malloc.h>
-#include <raylib.h>
+#include "raylib.h"
 #include <string.h>
-#include <stateAbstract.h>
+#include "stateAbstract.h"
+#include "resourceManager.h"
 
 #define REGISTER_STATE(app,state) (appAddState(app, (StateAbstract_t *) state))
 
@@ -14,6 +15,12 @@ typedef struct {
     int width;
     int height;
     char *title;
+
+    ResourceManager_t *images;
+    ResourceManager_t *fonts;
+    ResourceManager_t *waves;
+    ResourceManager_t *sounds;
+    ResourceManager_t *musics;
 
     void **states;
     size_t stateCount;
