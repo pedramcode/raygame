@@ -7,6 +7,7 @@ set(ASSETS_DIR "${CMAKE_SOURCE_DIR}/assets")
 set(ASSETS_DEST_DIR "${CMAKE_BINARY_DIR}/assets")
 
 add_subdirectory(${CMAKE_SOURCE_DIR}/lib/raylib)
+add_subdirectory(${CMAKE_SOURCE_DIR}/lib/flecs)
 add_subdirectory(${CMAKE_SOURCE_DIR}/lib/rayengine)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
