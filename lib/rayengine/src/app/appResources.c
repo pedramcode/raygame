@@ -1,7 +1,7 @@
 #include "app.h"
 
-void appAddImage(App_t *app, Image *img, char *name) {
-    resourceAdd(app->images, name, (void *) img);
+void appAddTexture(App_t *app, Texture2D *texture, char *name) {
+    resourceAdd(app->textures, name, (void *) texture);
 }
 
 void appAddFont(App_t *app, Font *font, char *name) {
@@ -21,10 +21,10 @@ void appAddMusic(App_t *app, Music *music, char *name) {
 }
 
 
-Image *appGetImage(App_t *app, char *name) {
-    Resource_t *r = resourceGet(app->images, name);
+Texture2D *appGetTexture(App_t *app, char *name) {
+    Resource_t *r = resourceGet(app->textures, name);
     if (r == NULL) return NULL;
-    return (Image *) r->resource;
+    return (Texture2D *) r->resource;
 }
 
 Font *appGetFont(App_t *app, char *name) {

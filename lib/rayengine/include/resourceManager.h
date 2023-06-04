@@ -7,7 +7,7 @@
 #define RESOURCE_HASHTABLE_SIZE 1024
 
 typedef enum {
-    IMAGE,
+    TEXTURE,
     FONT,
     WAVE,
     SOUND,

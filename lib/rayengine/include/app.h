@@ -16,7 +16,7 @@ typedef struct {
     int height;
     char *title;
 
-    ResourceManager_t *images;
+    ResourceManager_t *textures;
     ResourceManager_t *fonts;
     ResourceManager_t *waves;
     ResourceManager_t *sounds;
@@ -41,7 +41,7 @@ int appExecute(App_t *app);
 
 void appFree(App_t *app);
 
-void appAddImage(App_t *app, Image *img, char *name);
+void appAddTexture(App_t *app, Texture2D *texture, char *name);
 
 void appAddFont(App_t *app, Font *font, char *name);
 
@@ -51,7 +51,7 @@ void appAddSound(App_t *app, Sound *sound, char *name);
 
 void appAddMusic(App_t *app, Music *music, char *name);
 
-Image *appGetImage(App_t *app, char *name);
+Texture2D *appGetTexture(App_t *app, char *name);
 
 Font *appGetFont(App_t *app, char *name);
 

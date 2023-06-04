@@ -12,7 +12,7 @@ App_t *appCreate(int width, int height, char *title) {
     app->states = malloc(sizeof(StateAbstract_t *) * app->stateCount);
     app->currentStateName = NULL;
 
-    app->images = resourceNewManager(IMAGE);
+    app->textures = resourceNewManager(TEXTURE);
     app->fonts = resourceNewManager(FONT);
     app->waves = resourceNewManager(WAVE);
     app->sounds = resourceNewManager(SOUND);
