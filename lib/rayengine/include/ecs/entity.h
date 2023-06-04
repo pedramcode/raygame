@@ -2,9 +2,9 @@
 #define RAYGAME_ENTITY_H
 
 #include "malloc.h"
-#include "utils/uuid4.h"
-#include "utils/truncateUUID.h"
 #include <stdlib.h>
+#include <string.h>
+#include "utils/uid.h"
 
 typedef struct {
     char *id;
